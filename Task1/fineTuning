@@ -1,3 +1,5 @@
+pip install TTS
+
 from TTS.utils.manage import ModelManager
 from TTS.tts.models import TTS
 from TTS.config import load_config
