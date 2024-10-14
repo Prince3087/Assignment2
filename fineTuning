@@ -1,0 +1,36 @@
+pip install TTS
+
+from TTS.utils.manage import ModelManager
+from TTS.tts.models import TTS
+from TTS.config import load_config
+from TTS.utils.audio import AudioProcessor
+import os
+
+# Step 1: Load pre-trained TTS model
+model_name = "tts_models/en/ljspeech/tacotron2-DDC"
+manager = ModelManager()
+model_path, config_path, _ = manager.download_model(model_name)
+
+# Step 2: Load configuration and initialize TTS model
+config = load_config(config_path)
+ap = AudioProcessor(**config.audio)
+
+model = TTS(model_path, config_path)
+
+# Step 3: Fine-tuning the model (assuming dataset is in proper format)
+output_path = "fine_tuned_model"
+model.fine_tune(dataset_path='path_to_your_dataset', 
+                output_path=output_path, 
+                batch_size=32, 
+                epochs=50,
+                lr=0.0001)
+//Evaluation
+from TTS.utils.evaluate import evaluate
+results = evaluate(fine_tuned_model, test_dataset)
+print("MOS:", results['MOS'])
+
+//Test Sample
+test_sentence = "API stands for Application Programming Interface."
+model.tts_to_file(test_sentence, "output.wav")
+
+                
