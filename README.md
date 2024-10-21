@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains the implementation of three main tasks focused on improving Text-to-Speech (TTS) models. The tasks were assigned during my internship at **Parimal Lab, IIT Roorkee**, with a focus on fine-tuning TTS for specific applications and optimizing inference speed.
+This repository contains the implementation of three main tasks focused on improving Text-to-Speech (TTS) models. The tasks were assigned during my selection process for internship at **Parimal Lab, IIT Roorkee**, with a focus on fine-tuning TTS for specific applications and optimizing inference speed.
 
 ### Tasks Overview:
 
@@ -59,7 +59,7 @@ These challenges enhanced my understanding of TTS model customization and the im
 
 ## Conclusion
 
-This internship at Parimal Lab, IIT Roorkee, provided valuable experience in TTS technology. The results highlighted the potential of fine-tuning models for specific applications and the effectiveness of quantization techniques for optimizing performance. 
+This internship  at Parimal Lab, IIT Roorkee, provided valuable experience in TTS technology. The results highlighted the potential of fine-tuning models for specific applications and the effectiveness of quantization techniques for optimizing performance. 
 
 ## License
 
@@ -69,4 +69,4 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 ## Acknowledgments
 
-Special thanks to **Parimal Lab, IIT Roorkee**, for the opportunity and support throughout this internship.
+Special thanks to **Parimal Lab, IIT Roorkee**, for the opportunity and support throughout the slection process of internship.
